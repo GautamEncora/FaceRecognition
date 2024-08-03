@@ -49,7 +49,7 @@ submitBtn.addEventListener('click', async () => {
 });
 
 async function loadLabeledImages() {
-  const labels = ['sheldon','Amitabh','BillGates']; // Replace with your labels
+  const labels = ['sheldon','Amitabh','BillGates','Narendra Modi']; // Replace with your labels
   return Promise.all(
     labels.map(async label => {
       const descriptions = [];
