@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Recognition App</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      background-color: gray;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    #fileInput, #submitBtn {
+      margin: 10px 0;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    #imageContainer {
+      margin-top: 20px;
+    }
+    #submittedImage {
+      max-width: 300px;
+      max-height: 300px;
+      display: none;
+    }
+    #submitBtn{
+      border-radius: 0;
+      padding: 10px;
+      font-size: larger;
+      background-color:  rgb(176, 178, 104);
+    }
+    input{
+      background-color: rgb(176, 178, 104);
+      margin: 5px;
+      padding: 5px;
+      border: 1px solid black;
+    }
+    input:file{
+      background-color: gray;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Face Recognition App for Available data</h1>
+  <h3>Amitabh Bacchan , Sheldon , Bill Gates</h3>
+  <input id="fileInput" type="file" accept="image/*">
+  <button id="submitBtn">Submit</button>
+  <div id="result"></div>
+  <div id="imageContainer">
+    <img id="submittedImage" alt="Submitted Image">
+  </div>
+</body>
+</html>
